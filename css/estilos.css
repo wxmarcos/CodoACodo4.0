@@ -1,8 +1,92 @@
-#navbar {
-    /* Estilos para la barra de navegación */
-    padding-bottom: 40px; /* Ajusta el valor según tus necesidades */
-}
-.container {
+.jumbotron {
     /* Estilos para el contenedor */
     padding-top: 60px; /* Ajusta el valor según tus necesidades */
+}
+/* Elimina el espacio adicional debajo del footer */
+body {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Estilo personalizado para el footer con fondo verde claro */
+
+    /* Estilo para el footer con imagen de fondo */
+footer {
+    background-image: url('/img/footer.jpg'); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Escala la imagen para que cubra todo el footer */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center; /* Centra la imagen en el footer */
+}
+
+h2
+{
+    font-style: bold;
+}
+.mail:link
+{
+text-decoration: none;
+color: #fff;
+}
+:root
+{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --twitter:#55acee;
+    --linkedin: #0077b5;
+}
+
+.redes-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li
+{
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+    color: #333;
+}
+
+.redes-container ul li a
+{
+    display: block;
+    padding: 0 10px;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
+    transition: .2s;
+    border-radius: 35px;
+}
+
+.redes-container ul:hover a
+{filter: blur(2px);
+}
+
+.redes-container ul li a:hover
+{
+    transform: translate(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,.4);
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover
+{
+    background: var(--facebook);
+}
+.redes-container ul li .twitter:hover
+{
+    background: var(--twitter);
+}
+.redes-container ul li .instagram:hover
+{
+    background: var(--instagram);
+}
+.redes-container ul li .linkedin:hover
+{
+    background: var(--linkedin);
 }
