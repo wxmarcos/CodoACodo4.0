@@ -18,6 +18,21 @@ footer {
     background-position: center; /* Centra la imagen en el footer */
 }
 
+/* Estilo personalizado para el flexbox de los servicios */
+.flex-container-servicios {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila si no caben en el ancho del contenedor. */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme a lo largo del contenedor. */
+}
+.flex-item-servicios {
+    width: calc(33.33% - 20px); /* Define el ancho deseado para cada elemento. */
+    margin: 10px; /* Agrega un margen para separar los elementos. */
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 h2
 {
     font-style: bold;
