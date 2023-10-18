@@ -45,11 +45,27 @@
 
 
 <!-- Héroe con Bootstrap Jumbotron -->
-<div class="jumbotron text-center">
-    <div class="container" id="citas">
+<div class="jumbotron text-center" id="citas">
+    <div class="container">
         <h1 class="display-4">Atención veterinaria de calidad</h1>
         <p class="lead">Brindamos cuidados excepcionales para tus mascotas.</p>
         <a href="#" class="btn btn-primary btn-lg">Programa una cita</a>
+        <div id="formularioModal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" id="cerrarFormularioModal">&times;</span>
+                <h2>Formulario</h2>
+                
+                <form id="miFormulario">
+                    
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Apellido" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="mensajeExito" style="display: none;">El formulario se envió correctamente.</div>
+            </div>
+        </div>
+        <script src="script.js"></script>
         <br><br> <!-- Agregamos saltos de línea para separar el contenido -->
         <img src="/img/perro_portada.jpg" alt="Mascota feliz" class="img-fluid" width="800px" height="500px">
     </div>
