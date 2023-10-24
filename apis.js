@@ -1,4 +1,8 @@
-  // Función para obtener y mostrar la hora actual
+var apiKey = "4d60f1a3d8b3439d92023947232410";
+var ciudad = "Buenos_Aires";
+var url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${ciudad}`;
+
+// Función para obtener y mostrar la hora actual
   function updateClock() {
     const clockElement = document.getElementById("reloj");
     const now = new Date();
@@ -17,9 +21,6 @@ updateClock();
 
 // Función para obtener el pronóstico del tiempo
 function obtenerPronostico() {
-    const apiKey = "4d60f1a3d8b3439d92023947232410";
-    const ciudad = "Buenos_Aires";
-    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${ciudad}`;
 
     fetch(url)
     .then(response => response.json())
