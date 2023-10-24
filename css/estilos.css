@@ -7,7 +7,14 @@ body {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+.apis{
+    display: flex;
+    justify-content: flex-end;
+}
 
+.clima{
+    margin-right: 10px;
+}
 /* Estilo personalizado para el footer con fondo verde claro */
 
     /* Estilo para el footer con imagen de fondo */

@@ -27,7 +27,7 @@ function obtenerPronostico() {
         const temperatura = data.current.temp_c;
 
         // Actualiza el contenido del elemento en la barra de navegación
-        const weatherInfoElement = document.getElementById("weather-info");
+        const weatherInfoElement = document.getElementById("clima");
         weatherInfoElement.innerHTML = `Clima: ${temperatura}°C`;
     })
     .catch(error => {
