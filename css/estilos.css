@@ -177,3 +177,80 @@ color: #fff;
 .cerrar:hover {
     color: #333;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.container .fila {
+    width: 80%;
+    margin: auto;
+}
+
+.container .fila .header {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.container .fila .header h1 {
+    padding-top: 30px;
+    font-size: 45px;
+    color: #e19c30;
+}
+
+.container .fila .header p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #6e6e6e;
+}
+
+.nav {
+    margin-top: 20px; /* Ajusta el margen superior del menú según sea necesario */
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado para alinear las tarjetas en la parte superior */
+    margin: 40px auto 0; /* Ajusta el margen superior para dar espacio al menú */
+}
+
+.contenido .tarjeta {
+    flex: 1;
+    width: 100%; /* Asegura que todas las tarjetas ocupen el 100% del ancho disponible */
+    max-width: 300px; /* Establece un ancho máximo para evitar que se expandan demasiado */
+    margin: 20px; /* Ajusta los márgenes para el espacio entre tarjetas */
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Alinea el contenido de las tarjetas verticalmente */
+}
+
+.contenido .tarjeta img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Establece una altura máxima para las imágenes */
+}
+
+.contenido .tarjeta h4 {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.contenido .tarjeta p {
+    font-size: 15px;
+    color: #6e6e6e;
+    line-height: 1.5;
+    padding: 10px;
+}

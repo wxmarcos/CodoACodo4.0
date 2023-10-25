@@ -24,19 +24,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#top">Inicio</a>
+                    <a class="nav-link" href="veterinaria.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#acerca_de_nosotros">Acerca de nosotros</a>
+                    <a class="nav-link" href="veterinaria.html">Acerca de nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#servicios">Servicios</a>
+                    <a class="nav-link" href="veterinaria.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#citas">Citas</a>
+                    <a class="nav-link" href="veterinaria.html">Citas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#blog">Blog</a>
+                    <a class="nav-link" href="veterinaria.html">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contacto">Contacto</a>
@@ -50,56 +50,51 @@
     </div>
     <script src="apis.js"></script>
 </nav>
-<!-- Héroe con Bootstrap Jumbotron -->
-<div class="jumbotron text-center" id="citas">
-    <div class="container">
-        <h1 class="display-4">Atención veterinaria de calidad</h1>
-        <p class="lead">Brindamos cuidados excepcionales para tus mascotas.</p>
-        <a href="#" class="btn btn-primary btn-lg">Programa una cita</a>
-        <div id="formularioModal" class="modal">
-            <div class="modal-contenido">
-                <span class="cerrar" id="cerrarFormularioModal">&times;</span>
-                <h2>Formulario</h2>
-                
-                <form id="miFormulario">
-                    
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="text" placeholder="Apellido" required>
-                    <input type="email" placeholder="Correo electrónico" required>
-                    <button type="submit">Enviar</button>
-                </form>
-                <div id="mensajeExito" style="display: none;">El formulario se envió correctamente.</div>
-            </div>
-        </div>
-        <script src="formulario.js"></script>
-        <br><br> <!-- Agregamos saltos de línea para separar el contenido -->
-        <img src="/img/perro_portada.jpg" alt="Mascota feliz" class="img-fluid" width="800px" height="500px">
-    </div>
-</div>
 
-<!-- Sección de Acerca de nosotros -->
-<main>
-    <div class="container py-4" id="acerca_de_nosotros">
-      <div class="p-5 mb-4 bg-light rounded-3">
-        <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold">Acerca de nosotros</h1>
-          <p class="col-md-8 fs-4">Somos un equipo apasionado de veterinarios con años de experiencia en el cuidado de animales. Nuestra misión es proporcionar la mejor atención posible para tus mascotas.</p>
-          <img src="/img/veterinario.jpg" alt="Veterinario" class="img-fluid" width="500px" height="200px">
-        </div>
-      </div>
-  
-            <!-- Sección de Servicios -->
-        <div class="row align-items-md-stretch" id="servicios" >
-            <div class="col-md-6">
-            <div class="h-100 p-5 text-bg-dark rounded-3">
-                <h2>Nuestros Servicios</h2>
-                <p>En nuestra clínica veterinaria, nos enorgullece ofrecer una gama completa de servicios diseñados para cuidar y 
-                    proteger a tus seres queridos peludos. Nuestro equipo de veterinarios altamente capacitados está comprometido 
-                    con la salud y el bienestar de tus mascotas. </p>
-                <button class="btn btn-outline-light" type="button" onclick="window.location.href='servicios.html'">Ver servicios</button>
-            </div>
-            </div>
-      </div>
+
+<!-- Primera fila de tarjetas (arriba) -->
+<div class="contenido">
+    <div class="tarjeta">
+      <!-- Contenido de la tarjeta 1 -->
+      <img src="img/img1.jpg" alt="Post HTML">
+      <h4>Los beneficios de la atención veterinaria regular</h4>
+      <p>La atención veterinaria regular es esencial para mantener a tu mascota sana y feliz. En este artículo, exploraremos los beneficios de llevar a tu mascota al veterinario de manera periódica. Desde exámenes de salud preventivos hasta vacunas y consejos sobre cuidado general, descubre cómo los servicios veterinarios pueden garantizar una vida larga y saludable para tu amado compañero peludo. ¡No te lo pierdas!</p>
+    </div>
+    <div class="tarjeta">
+      <!-- Contenido de la tarjeta 2 -->
+      <img src="img/img2.jpg" alt="Post CSS">
+      <h4>Cómo cuidar adecuadamente a tu mascota</h4>
+      <p>El cuidado adecuado de tu mascota es esencial para su bienestar general. En este artículo, exploraremos consejos prácticos y sencillos para garantizar una vida saludable y feliz para tu compañero peludo. Desde la alimentación adecuada hasta el ejercicio diario y los cuidados veterinarios necesarios, descubre cómo puedes ser el mejor cuidador para tu amado animal. ¡No te lo pierdas!</p>
+    </div>
+    <div class="tarjeta">
+      <!-- Contenido de la tarjeta 3 -->
+      <img src="img/img3.jpeg" alt="Post JS">
+      <h4>La importancia de la esterilización en mascotas</h4>
+      <p>La esterilización es un procedimiento vital para el bienestar de tus mascotas. En este artículo, exploraremos los beneficios de la esterilización, incluyendo la prevención de enfermedades graves y la reducción de problemas de comportamiento. Además, discutiremos los mitos comunes sobre la esterilización y cómo puedes tomar la decisión correcta para tu fiel amigo peludo. No pierdas la oportunidad de aprender más sobre este importante tema.</p>
+    </div>
+  </div>
+
+  <!-- Segunda fila de tarjetas (abajo) -->
+  <div class="contenido">
+    <div class="tarjeta">
+      <!-- Contenido de la tarjeta 4 -->
+      <img src="img/img4.jpg" alt="Post SQL">
+      <h4>Consejos para el adiestramiento de tu perro</h4>
+      <p>El adiestramiento de tu perro es esencial para una convivencia armoniosa. En este artículo, encontrarás útiles consejos para entrenar a tu perro, desde los comandos básicos hasta la solución de problemas de comportamiento. Además, aprenderás sobre las técnicas de refuerzo positivo y cómo establecer una comunicación efectiva con tu mascota. ¡No te pierdas esta guía completa para convertirte en el mejor entrenador de tu perro!</p>
+    </div>
+    <div class="tarjeta">
+      <!-- Contenido de la tarjeta 5 -->
+      <img src="img/img5.jpg" alt="Post bootstrap">
+      <h4>Consejos para mantener a tu gato activo y saludable</h4>
+      <p>Es importante mantener a tu gato activo y saludable para asegurar su bienestar a largo plazo. En este artículo, descubrirás consejos prácticos y divertidos para estimular el ejercicio y la actividad de tu felino. Desde jugar con juguetes interactivos hasta crear un entorno enriquecido, te mostraremos cómo ayudar a tu gato a mantenerse en forma y feliz. ¡No te pierdas estos consejos esenciales para cuidar a tu gato de la mejor manera posible!</p>
+    </div>
+    <div class="tarjeta">
+      <!-- Contenido de la tarjeta 6 -->
+      <img src="img/img6.jpg" alt="Post React">
+      <h4>Consejos para cuidar peces de acuario</h4>
+      <p>Mantener un acuario con peces puede ser una experiencia apasionante y relajante. En este artículo, te brindamos algunos consejos prácticos para cuidar tus peces de acuario. Aprende sobre la importancia del equilibrio del agua, la alimentación adecuada, el mantenimiento regular y la elección de peces compatibles. Descubrirás cómo crear un entorno saludable y seguro para tus peces, asegurando su bienestar y su belleza. Sigue estos consejos y disfruta de un acuario vibrante y colorido en tu hogar.</p>
+    </div>
+  </div>
 <br>
 
 
