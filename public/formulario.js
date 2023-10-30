@@ -27,15 +27,42 @@ cerrarFormularioModal.addEventListener('click', function() {
 miFormulario.addEventListener("submit", function(e) {
     e.preventDefault(); // Evita el envío normal del formulario
 
-    // Muestra el mensaje de éxito
+    // Obtiene los valores de los campos del formulario
+    const nombre = formulario.querySelector('input[name="nombre"]').value;
+    const email = formulario.querySelector('input[name="email"]').value;
+    const apellido = formulario.querySelector('input[name="apellido"]').value;
+
+    // Realiza la validación
+    if (nombre.trim() === "") {
+        alert("Por favor, ingresa tu nombre.");
+        return;
+    }
+     // Realiza la validación
+     if (apellido.trim() === "") {
+        alert("Por favor, ingresa tu apellido.");
+        return;
+    }
+
+    if (!isValidEmail(email)) {
+        alert("Por favor, ingresa un correo electrónico válido.");
+        return;
+    }
+
+    // Si pasa la validación, muestra el mensaje de éxito
     mensajeExito.style.display = "block";
-    
+
     // Oculta el formulario
     miFormulario.style.display = "none";
-    
 });
 
-// También puedes cerrar el modal al hacer clic en cualquier lugar fuera del modal
+// Función para validar el formato de correo electrónico
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+
+// Funcion para cerral el model del formulario
 window.addEventListener('click', function(event) {
     if (event.target === formularioModal) {
         formularioModal.style.display = 'none';

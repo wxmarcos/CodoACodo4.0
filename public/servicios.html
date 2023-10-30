@@ -102,11 +102,11 @@
                 <span class="cerrar" id="cerrarFormularioModal">&times;</span>
                 <h2>Formulario</h2>
                 
-                <form id="miFormulario">
+                <form id="miFormulario" method="post" action="enviar_correo.php">
                     
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="text" placeholder="Apellido" required>
-                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
                     <button type="submit">Enviar</button>
                 </form>
                 <div id="mensajeExito" style="display: none;">El formulario se envió correctamente.</div>
