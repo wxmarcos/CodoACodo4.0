@@ -11,6 +11,7 @@
     <script src="https://api.weatherapi.com/js?key=4d60f1a3d8b3439d92023947232410"></script>
 </head>
 <body>
+<br><br>
 
 <!-- Encabezado con barra de navegación de Bootstrap -->
 <!-- Barra de navegación con Bootstrap Navbar -->
@@ -29,10 +30,10 @@
                     <a class="nav-link" href="#acerca_de_nosotros">Acerca de nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#servicios">Servicios</a>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="citas.html">Citas</a>
+                    <a class="nav-link" href="#citas">Citas</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="blog.html">Blog</a>
@@ -49,47 +50,34 @@
     </div>
     <script src="apis.js"></script>
 </nav>
-<br>
-<br>
-<br>
-    <div class="flex-container-servicios">
-        <div class="flex-item-servicios"> 
-            <h1>Consultas Veterinarias</h1>
-            <p>Ofrecemos consultas médicas para brindar diagnósticos y tratamientos a tus mascotas.</p>
+
+
+<!-- Héroe con Bootstrap Jumbotron -->
+<div class="jumbotron text-center" id="citas">
+    <div class="container">
+        <h1 class="display-4">Atención veterinaria de calidad</h1>
+        <p class="lead">Brindamos cuidados excepcionales para tus mascotas.</p>
+        <a href="#" class="btn btn-primary btn-lg">Programa una cita</a>
+        <div id="formularioModal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" id="cerrarFormularioModal">&times;</span>
+                <h2>Formulario</h2>
+                
+                <form id="miFormulario" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <button type="submit">Enviar</button>
+                </form>
+                
+                <div id="mensajeExito" style="display: none;">El formulario se envió correctamente</div>
+            </div>
         </div>
-        <div class="flex-item-servicios">
-            <h1>Vacunación</h1>
-            <p>Proporcionamos servicios de vacunación para prevenir enfermedades infecciosas en tus animales.</p>
-        </div>
-        <div class="flex-item-servicios">
-            <h1>Cirugía Veterinaria</h1>
-            <p>Realizamos cirugías, incluyendo esterilizaciones, castraciones y procedimientos quirúrgicos necesarios.</p>
-        </div>
-        <div class="flex-item-servicios">
-            <h1>Dentista Veterinario</h1>
-            <p> Ofrecemos servicios de odontología veterinaria, incluyendo limpieza dental, extracción de dientes y tratamientos dentales.</p>
-        </div>
-        <div class="flex-item-servicios">
-            <h1>Laboratorio Clínico</h1>
-            <p>Realizamos análisis de sangre, pruebas de diagnóstico por imágenes y otros exámenes para evaluar la salud de los animales.</p>
-        </div>
-        <div class="flex-item-servicios">
-            <h1>Hospitalización</h1>
-            <p>Proporcionamos cuidados intensivos y hospitalización para animales que requieren atención continua debido a enfermedades graves o cirugía.</p>
-        </div>
-        <div class="flex-item-servicios">
-            <h1>Servicios de Urgencias</h1>
-            <p>Estamos disponibles las 24 horas para proporcionar atención de emergencia a tus mascotas en situaciones críticas.</p>
-        </div>
-        <div class="flex-item-servicios">
-            <h1>Medicina Preventiva</h1>
-            <p>Ofrecemos servicios de desparasitación, prevención contra enfermedades transmitidas por garrapatas y pulgas, y brindamos recomendaciones para la prevención de enfermedades.</p>
-        </div>
-        <div class="flex-item-servicios">
-            <h1>Vacunación</h1>
-            <p>Proporcionamos terapia física y rehabilitación para animales con problemas de movilidad, como lesiones o cirugías ortopédicas.</p>
-        </div>
+        <script src="formulario.js"></script>
+        <br><br> <!-- Agregamos saltos de línea para separar el contenido -->
+        <img src="/img/perro_portada.jpg" alt="Mascota feliz" class="img-fluid" width="800px" height="500px">
     </div>
+</div>
 
 <!-- Sección de Acerca de nosotros -->
 <main>
@@ -114,7 +102,6 @@
         </div>
       </div>
 <br>
-
 
 <!-- Pie de página de Bootstrap -->
 <footer class="text-white text-center py-4" id="contacto">

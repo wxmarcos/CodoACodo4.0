@@ -47,12 +47,6 @@ miFormulario.addEventListener("submit", function(e) {
         alert("Por favor, ingresa un correo electrónico válido.");
         return;
     }
-
-    // Si pasa la validación, muestra el mensaje de éxito
-    mensajeExito.style.display = "block";
-
-    // Oculta el formulario
-    miFormulario.style.display = "none";
 });
 
 // Función para validar el formato de correo electrónico

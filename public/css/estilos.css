@@ -1,3 +1,24 @@
+/* Estilos para el contenedor de bienvenida */
+.welcome-container {
+    background-image: url('https://th.bing.com/th/id/R.06593c09dda3036ede234e75e42bb3dd?rik=yaAC0r5bTmIT4Q&riu=http%3a%2f%2fwww.magneticafm.com%2fwp-content%2fuploads%2f2014%2f07%2fdogs-1.jpg&ehk=UJthUlqbWL7DlnaI4GlauQUvrNcJ6z4dCRGOoOrWFJ4%3d&risl=&pid=ImgRaw&r=0'); 
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.welcome-content {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+
 .jumbotron {
     /* Estilos para el contenedor */
     padding-top: 60px; /* Ajusta el valor según tus necesidades */
