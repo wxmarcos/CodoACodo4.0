@@ -28,9 +28,9 @@ miFormulario.addEventListener("submit", function(e) {
     e.preventDefault(); // Evita el envío normal del formulario
 
     // Obtiene los valores de los campos del formulario
-    const nombre = formulario.querySelector('input[name="nombre"]').value;
-    const email = formulario.querySelector('input[name="email"]').value;
-    const apellido = formulario.querySelector('input[name="apellido"]').value;
+    const nombre = miFormulario.querySelector('input[name="nombre"]').value;
+    const email = miFormulario.querySelector('input[name="email"]').value;
+    const apellido = miFormulario.querySelector('input[name="apellido"]').value;
 
     // Realiza la validación
     if (nombre.trim() === "") {
